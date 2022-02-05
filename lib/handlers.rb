@@ -32,7 +32,7 @@ module PINS
 
     # @return [Hash] containing all the handlers
     def self.handlers
-      @handlers
+      @handlers ||= {}
     end
 
     # Run the appropriate handlers
